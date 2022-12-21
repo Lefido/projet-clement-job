@@ -1,365 +1,325 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-
+  scroll-behavior: smooth;
+}
 
 body {
-    border: 5px solid #467fce ;
-    position: relative;
+  border: 5px solid #467fce;
+  position: relative;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    position: relative;
+  width: 80%;
+  margin: auto;
+  position: relative;
 }
 
-
 nav {
-    width: 98%;
-    display: flex;
-    justify-content: right;
-    margin-top: 50px;
+  width: 98%;
+  display: flex;
+  justify-content: right;
+  margin-top: 50px;
 }
 
 nav ul {
-
-    display: flex;
-    font-weight: bold;
-
+  display: flex;
+  font-weight: bold;
 }
 
 header {
-  
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .title {
-
-    font-family: 'Alice', serif;
-    width: 260px;
-    text-align: center;
-
+  font-family: "Alice", serif;
+  width: 260px;
+  text-align: center;
 }
 
 .title h1 {
-    width: 245px;
+  width: 245px;
 }
 
 .title span {
-    font-size: 16px;
-    text-decoration: underline;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 article {
-    width: 100%;
-    text-align: center;
-    color: #467fce;
-    margin-top: 70px;
-    font-family: 'Alice', serif;
-    font-size: 20px;
-    
+  width: 100%;
+  text-align: center;
+  color: #467fce;
+  margin-top: 70px;
+  font-family: "Alice", serif;
+  font-size: 20px;
 }
 
 article p {
-    
-    color: black;
-    padding: 30px 97px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    /* line-height: 25px; */
-    letter-spacing: 1px;
-   
+  color: black;
+  padding: 30px 97px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 section {
-    width: 70%;
-    margin: auto;
-    margin: 20px auto 40px;
+  width: 70%;
+  margin: auto;
+  margin: 20px auto 40px;
 }
 
 section div {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 section h4 {
-    width: 25%;
-    font-family: 'Alice', serif;
-    color: #467fce;
-    font-size: 17px;
-    text-align: right;
-    padding: 5px;
-
+  width: 25%;
+  font-family: "Alice", serif;
+  color: #467fce;
+  font-size: 17px;
+  text-align: right;
+  padding: 5px;
 }
 
 section p {
-    width: 75%;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-size: 16px;
-    padding: 5px 0;
-    font-weight: bold;
+  width: 75%;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 16px;
+  padding: 5px 0;
+  font-weight: bold;
 }
 
 .cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-   
-
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .card {
-
-    font-family: 'Alice', serif;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 256px;
-    height: 256px;
-    background-color: #ebf2fa;
-    color: #aaadb2;
-    transition: 0.2s;
-    margin: 10px;
-    
+  font-family: "Alice", serif;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 256px;
+  height: 256px;
+  background-color: #ebf2fa;
+  color: #aaadb2;
+  transition: 0.2s;
+  margin: 10px;
 }
 
 .card:hover {
-    background-color: #467fce;
-    color: white;
+  background-color: #467fce;
+  color: white;
 }
 
 .card p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .card h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .card span {
-    color: black;
+  color: black;
 }
 
 .image-1 {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    position: relative;
-    left:  -5%;
-
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  left: -5%;
 }
 
 .image-1-seule {
-    position: relative;
-    width: 410;
+  position: relative;
+  width: 410;
 }
 
-
 .content-1 {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-   
-    color: white;
-    padding: 50px;
-    width: 65%;
-    height: 50%;
-    background-color: #467fce;
-    opacity: 0.8;
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    /* transform: translate(-50%, -50%); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    font-size: 13px;
-    font-weight: bold;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+
+  color: white;
+  padding: 50px;
+  width: 65%;
+  height: 50%;
+  background-color: #467fce;
+  opacity: 0.8;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .content-1 span {
-    font-family: 'Alice', serif;
-    font-size: 25px;
-    font-weight: 100;
+  font-family: "Alice", serif;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 .image-2 {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    position: relative;
-    left:  3%;
-
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  left: 3%;
 }
 
 .image-2-seule {
-    position: relative;
-    width: 410;
+  position: relative;
+  width: 410;
 }
 
-
 .content-2 {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-   
-    color: white;
-    padding: 50px;
-    width: 65%;
-    height: 50%;
-    background-color: #467fce;
-    opacity: 0.8;
-    position: absolute;
-    top: 30%;
-    right: 60%;
-    /* transform: translate(-50%, -50%); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    font-size: 13px;
-    font-weight: bold;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+
+  color: white;
+  padding: 50px;
+  width: 65%;
+  height: 50%;
+  background-color: #467fce;
+  opacity: 0.8;
+  position: absolute;
+  top: 30%;
+  right: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .content-2 span {
-    font-family: 'Alice', serif;
-    font-size: 25px;
-    font-weight: 100;
+  font-family: "Alice", serif;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 footer {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    width: 100%;
-    text-align: center;
-    margin: 80px 0 80px;
-    font-weight: bold;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  margin: 80px 0 80px;
+  font-weight: bold;
 }
 
-p  {
-    line-height: 22px;
+p {
+  line-height: 22px;
 }
-
 
 .btn-up {
-    display: none;
-    width: 100px;
-    height: 100px;
-    background-color: #467fce;
-    position: fixed;
-    bottom: -50px;
-    left: 50%;
-    border-radius: 50%;
-    transform: translate(-50%);
-
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #467fce;
+  position: fixed;
+  bottom: -50px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%);
 }
 
 .btn-scroll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-scroll a {
-
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 36px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 36px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .fleche {
-    position: absolute;
-    top: 15px;
-    width: 3px;
-    height: 25px;
-    background-color: white;
+  position: absolute;
+  top: 15px;
+  width: 3px;
+  height: 25px;
+  background-color: white;
 }
 
 .fleche::before {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 15px;
-    background-color: white;
-    rotate: -45deg;
-    top: -1px;
-    left: 5px;
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 15px;
+  background-color: white;
+  rotate: -45deg;
+  top: -1px;
+  left: 5px;
 }
 
 .fleche::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 15px;
-    background-color: white;
-    rotate: 45deg;
-    top: -1px;
-    right: 5px;
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 15px;
+  background-color: white;
+  rotate: 45deg;
+  top: -1px;
+  right: 5px;
 }
 
-
-
-
 @media screen and (max-width: 900px) {
-    .container {
-        width: 100%;
-        margin: auto;
-    }
-
-    article p {
-        padding: 30px 20px;
-    }
-
-    section {
-        width: 100%;
-        /* margin: auto;
-        margin: 20px auto 40px; */
-    }
-
-    .content-1, .content-2 {
-
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-
-    }
-
-    .image-1, .image-2 {
-
-        left: auto;
-
-    }
-
-
+  .container {
+    width: 100%;
+    margin: auto;
   }
 
+  article p {
+    padding: 30px 20px;
+  }
 
+  section {
+    width: 100%;
+  }
+
+  .content-1,
+  .content-2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image-1,
+  .image-2 {
+    left: auto;
+  }
+}
