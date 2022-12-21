@@ -4,6 +4,8 @@ import Neige from "./Neige.js";
 const btn_up = document.querySelector('.btn-up');
 const body = document.querySelector('body')
 
+var navMobile = mobilecheck()
+
 window.addEventListener('scroll', () => {
     if(window.scrollY > 80) {
         btn_up.classList.add('btn-scroll');
@@ -15,17 +17,20 @@ window.addEventListener('scroll', () => {
 
 var flocons = [];
 
-for (let i = 0; i < 150; i++) {
+if (!navMobile) {
 
-    console.log("Ajout flocon :" , i)
+    for (let i = 0; i < 150; i++) {
 
-    new_flocon()
+        new_flocon()
+       
+    }
+
+    setInterval(playing, 1000/60)
 
 }
 
-let playInterval = setInterval(playing, 1000/60)
-
 function playing() {
+
 
 flocons.forEach((flocon, id) => {
 
@@ -58,8 +63,11 @@ function rnd(valeur) {
 }
 
 
-
-
+function mobilecheck() {
+    return (typeof window.orientation !== "undefined") 
+      || (navigator.userAgent.indexOf('IEMobile') !== -1
+      );
+};
 
 
 

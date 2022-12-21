@@ -12,7 +12,7 @@ export default class Neige {
         flocon.style.position = "absolute"
         flocon.style.borderRadius = "50%"
         flocon.style.opacity = "0.2"
-
+        
         body.appendChild(flocon);
 
         this.flocon = flocon;
