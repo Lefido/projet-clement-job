@@ -24,11 +24,21 @@ export default class Neige {
     this.x = x;
     this.vy = vy;
     this.vx = vx;
+    this.cx = rnd(36);
+    this.dx = 1 + rnd(1)
   }
 
   move() {
     this.y += this.vy;
-    this.x = this.x + this.vx;
+    this.cx = this.cx + 0.1
+
+    if (this.cx > 36) {
+        this.cx = 0
+    }
+    // this.x = this.x + this.vx;
+
+    this.x = this.x + this.dx * Math.sin(this.cx);
+
     this.flocon.style.top = this.y + "px";
     this.flocon.style.left = this.x + "px";
 

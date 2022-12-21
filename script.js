@@ -38,7 +38,7 @@ function playing() {
 function new_flocon() {
   let taille = rnd(10);
   let flocon = new Neige(
-    10 + rnd(innerWidth - 40),
+    10 + rnd(innerWidth - 100),
     -rnd(innerHeight),
     taille,
     taille,
