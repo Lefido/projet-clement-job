@@ -322,5 +322,9 @@ p {
   .image-1,
   .image-2 {
     left: auto;
+    width: 50%;
+   
   }
+
+
 }

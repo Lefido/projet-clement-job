@@ -4,9 +4,13 @@ export default class Neige {
   constructor(x, y, w, h, vx, vy) {
     let flocon = document.createElement("div");
     flocon.classList.add("flocon");
-    flocon.style.backgroundColor = "gray";
+    // flocon.style.background = "url('./assets/flocon.png') no-repeat"
+    // flocon.style.backgroundSize = "100% 100%";
     flocon.style.position = "absolute";
     flocon.style.borderRadius = "50%";
+    let gray = 100 + rnd(100)
+    flocon.style.backgroundColor = `rgb(${gray},${gray},${gray})`;
+
     flocon.style.opacity = "0.2";
 
     body.appendChild(flocon);
@@ -28,18 +32,13 @@ export default class Neige {
     this.flocon.style.top = this.y + "px";
     this.flocon.style.left = this.x + "px";
 
-    // let direction = Math.floor(Math.random() * 3);
-
-    // if (direction === 1 ) {
-    //     this.vx = 5
-    //     console.log("direction droite")
-    // } else {
-    //     this.vx = -5
-    //     console.log("direction gauche")
-    // }
   }
 
   remove() {
     this.flocon.remove();
   }
+}
+
+function rnd(valeur) {
+    return Math.floor(Math.random() * valeur)
 }
