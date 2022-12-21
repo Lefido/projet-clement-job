@@ -31,7 +31,7 @@ flocons.forEach((flocon, id) => {
 
     flocon.move()
 
-    if (flocon.y > body.offsetHeight) {
+    if (flocon.y > body.offsetHeight -20) {
         flocons.splice(id,1);
         flocon.remove()
         new_flocon()
@@ -45,7 +45,7 @@ flocons.forEach((flocon, id) => {
 function new_flocon() {
 
     let taille = rnd(10)
-    let flocon = new Neige(rnd(innerWidth), -rnd(500), taille, taille,rnd(10), rnd(10))
+    let flocon = new Neige(rnd(innerWidth-20), -rnd(innerHeight), taille, taille,0, rnd(10))
 
     flocons.push(flocon);
 
@@ -53,7 +53,7 @@ function new_flocon() {
 
 function rnd(valeur) {
 
-    return 2 + Math.floor(Math.random() * valeur);
+    return 3 + Math.floor(Math.random() * valeur);
 
 }
 
