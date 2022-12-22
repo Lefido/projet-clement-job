@@ -4,14 +4,17 @@ export default class Neige {
   constructor(x, y, w, h, vx, vy) {
     let flocon = document.createElement("div");
     flocon.classList.add("flocon");
-    // flocon.style.background = "url('./assets/flocon.png') no-repeat"
-    // flocon.style.backgroundSize = "100% 100%";
     flocon.style.position = "absolute";
     flocon.style.borderRadius = "50%";
     let gray = 100 + rnd(100)
     flocon.style.backgroundColor = `rgb(${gray},${gray},${gray})`;
+    // flocon.style.background = "url('./assets/flocon.png') no-repeat"
+    // flocon.style.backgroundSize = "100% 100%";
 
-    flocon.style.opacity = "0.2";
+    flocon.style.opacity = ( 2 + rnd(2)) /10
+    flocon.style.boxShadow = "0 0 5px 2px white"
+
+    console.log("opacité ",( 2 + rnd(10)) /10)
 
     body.appendChild(flocon);
 

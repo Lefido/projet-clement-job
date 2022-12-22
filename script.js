@@ -16,7 +16,10 @@ window.addEventListener("scroll", () => {
 var flocons = [];
 
 if (!navMobile) {
-  for (let i = 0; i < 150; i++) {
+
+  let nbFlocon = 150
+
+  for (let i = 0; i < nbFlocon; i++) {
     new_flocon();
   }
 
@@ -36,7 +39,7 @@ function playing() {
 }
 
 function new_flocon() {
-  let taille = rnd(10);
+  let taille = rnd(12);
   let flocon = new Neige(
     10 + rnd(innerWidth - 100),
     -rnd(innerHeight),
@@ -50,7 +53,7 @@ function new_flocon() {
 }
 
 function rnd(valeur) {
-  return 3 + Math.floor(Math.random() * valeur);
+  return 4 + Math.floor(Math.random() * valeur);
 }
 
 function mobilecheck() {
